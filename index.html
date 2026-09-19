@@ -2,13 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=our_services_what_we_do/code.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SLR Graphics</title>
   <script>
-    window.location.href = "our_services_what_we_do/code.html";
+    (function() {
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+      if (isMobile) {
+        window.location.replace("mobile/services/code.html");
+      } else {
+        window.location.replace("our_services_what_we_do/code.html");
+      }
+    })();
   </script>
 </head>
 <body style="background:#170c31;color:#e9ddff;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;">
-  <p>Redirecting to <a href="our_services_what_we_do/code.html" style="color:#ddb7ff;">SLR Graphics Services</a>...</p>
+  <p>Loading SLR Graphics... <a id="redirect-link" href="our_services_what_we_do/code.html" style="color:#ddb7ff;">Click here if not redirected</a></p>
+  <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768) {
+      var link = document.getElementById('redirect-link');
+      if (link) link.href = "mobile/services/code.html";
+      window.location.replace("mobile/services/code.html");
+    }
+  </script>
 </body>
 </html>

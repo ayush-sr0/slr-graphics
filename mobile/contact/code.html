@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&amp;family=Sora:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-highest": "#392e55", "outline-variant": "#4d4354", "error-container": "#93000a", "background": "#170c31", "surface": "#170c31", "surface-tint": "#ddb7ff", "primary-fixed-dim": "#ddb7ff", "surface-dim": "#170c31", "surface-bright": "#3e3359", "inverse-on-surface": "#352a50", "inverse-primary": "#842bd2", "tertiary": "#c8c2e9", "outline": "#988d9f", "on-secondary": "#3f008e", "on-primary-fixed": "#2c0051", "tertiary-fixed": "#e5deff", "tertiary-container": "#928cb1", "surface-container": "#24193e", "on-surface": "#e9ddff", "secondary-fixed": "#eaddff", "primary-container": "#b76dff", "on-secondary-fixed": "#25005a", "on-primary-container": "#400071", "on-tertiary-container": "#2a2644", "primary-fixed": "#f0dbff", "secondary-fixed-dim": "#d2bbff", "surface-container-lowest": "#12062c", "secondary": "#d2bbff", "on-surface-variant": "#cfc2d6", "primary": "#ddb7ff", "on-tertiary-fixed": "#1b1735", "inverse-surface": "#e9ddff", "surface-container-high": "#2e2449", "on-error": "#690005", "on-secondary-fixed-variant": "#5a00c6", "surface-variant": "#392e55", "tertiary-fixed-dim": "#c8c2e9", "on-primary-fixed-variant": "#6900b3", "on-tertiary": "#302c4b", "on-background": "#e9ddff", "surface-container-low": "#20153a", "on-tertiary-fixed-variant": "#474363", "on-primary": "#490080", "secondary-container": "#6001d1", "error": "#ffb4ab", "on-error-container": "#ffdad6", "on-secondary-container": "#c9aeff" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "gutter-desktop": "2rem", "margin-desktop": "4rem", "space-xs": "0.25rem", "space-2xl": "4rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin": "1.25rem", "space-3xl": "6rem", "space-xl": "2.5rem" }, fontFamily: { "headline-lg-mobile": ["Sora"], "label-md": ["Hanken Grotesk"], "body-lg": ["Hanken Grotesk"], "headline-sm": ["Sora"], "display": ["Sora"], "headline-md": ["Sora"], "body-sm": ["Hanken Grotesk"], "title": ["Hanken Grotesk"], "label-sm": ["Hanken Grotesk"], "headline-lg": ["Sora"], "body-md": ["Hanken Grotesk"] }, fontSize: { "headline-lg-mobile": ["2.25rem", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "600" }], "label-md": ["0.875rem", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600" }], "body-lg": ["1.125rem", { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" }], "headline-sm": ["1.5rem", { lineHeight: "1.3", letterSpacing: "-0.015em", fontWeight: "500" }], "display": ["4.5rem", { lineHeight: "1.1", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-md": ["2rem", { lineHeight: "1.25", letterSpacing: "-0.02em", fontWeight: "600" }], "body-sm": ["0.875rem", { lineHeight: "1.5", letterSpacing: "0.005em", fontWeight: "400" }], "title": ["1.25rem", { lineHeight: "1.4", letterSpacing: "-0.01em", fontWeight: "600" }], "label-sm": ["0.75rem", { lineHeight: "1", letterSpacing: "0.08em", fontWeight: "500" }], "headline-lg": ["3rem", { lineHeight: "1.15", letterSpacing: "-0.025em", fontWeight: "600" }], "body-md": ["1rem", { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background font-body-md text-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.3)]"><div class="h-16 px-margin flex items-center justify-between"><a class="flex items-center gap-space-sm" href="../services/code.html"><img alt="SLR Graphics Logo" class="h-9 w-auto object-contain" src="../../slr_logo.png"/><div class="flex flex-col"><span class="font-headline-sm text-title text-on-surface tracking-tight leading-none">SLR Graphics</span><span class="font-label-sm text-label-sm text-primary tracking-wider uppercase leading-none mt-1">Contact</span></div></a><div class="flex items-center gap-space-sm"><a class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(183,109,255,0.4)]" href="#transmission-form"><span class="material-symbols-outlined text-on-primary text-[18px]">send</span></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin py-space-md gap-space-lg relative overflow-hidden">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full bg-primary-container/15 blur-[90px] pointer-events-none"></div>
+<div class="absolute top-1/3 -right-20 w-64 h-64 rounded-full bg-secondary-container/20 blur-[80px] pointer-events-none"></div>
+<!-- Eyebrow & Main Intro -->
+<div class="flex flex-col gap-space-sm items-start relative z-10">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high/90 shadow-sm backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_#ddb7ff]"></span>
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">INITIATE PROJECT • TRANSMISSION PORTAL</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile tracking-tight text-on-surface">
+      Let's Build Your Brand's <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-primary-container">Next Evolution</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Tell us about your project, your timeline, and what you need crafted. We respond within 24 hours with a comprehensive proposal and discovery roadmap.
+    </p>
+</div>
+<!-- Studio Status Flash Card -->
+<div class="p-space-md rounded-lg bg-surface-container/85 backdrop-blur-xl shadow-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Q2/Q3 Available
+        </span>
+<span class="px-space-xs py-0.5 rounded-full bg-primary-container/30 text-primary-fixed text-label-sm font-label-sm font-medium">3 Slots Intake</span>
+</div>
+<h2 class="font-title text-title text-on-surface mt-1">Currently Accepting Select Client Commissions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        We restrict concurrent client intake to 3 partnerships per quarter to guarantee senior partner execution.
+      </p>
+</div>
+</div>
+<!-- Key Metrics Matrix -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low/90 backdrop-blur-md shadow-sm flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">120+</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Brands Built</span>
+</div>
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low/90 backdrop-blur-md shadow-sm flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">99.4%</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Client Praise</span>
+</div>
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low/90 backdrop-blur-md shadow-sm flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">&lt; 24h</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Response Window</span>
+</div>
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low/90 backdrop-blur-md shadow-sm flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold">3 Global</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Studio Hubs</span>
+</div>
+</div>
+<form class="flex flex-col gap-space-lg w-full" id="transmission-form" onsubmit="event.preventDefault(); handleTransmission();">
+<!-- Step 01: Multi-Select Chips -->
+<div class="p-space-md rounded-lg bg-surface-container/70 backdrop-blur-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">01</span>
+<h3 class="font-title text-title text-on-surface">What do you need crafted?</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select all domains relevant to your envisioned expansion.</p>
+<div class="flex flex-wrap gap-2 pt-1" id="craft-pills">
+<button class="craft-pill px-space-sm py-2 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant bg-surface-container-high/90 hover:text-on-surface" data-selected="false" type="button">
+          Brand Identity
+        </button>
+<button class="craft-pill px-space-sm py-2 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant bg-surface-container-high/90 hover:text-on-surface" data-selected="false" type="button">
+          Collateral
+        </button>
+<button class="craft-pill px-space-sm py-2 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant bg-surface-container-high/90 hover:text-on-surface" data-selected="false" type="button">
+          Advertising
+        </button>
+<button class="craft-pill px-space-sm py-2 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant bg-surface-container-high/90 hover:text-on-surface" data-selected="false" type="button">
+          Social Design
+        </button>
+<button class="craft-pill px-space-sm py-2 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant bg-surface-container-high/90 hover:text-on-surface" data-selected="false" type="button">
+          Packaging
+        </button>
+<button class="craft-pill px-space-sm py-2 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant bg-surface-container-high/90 hover:text-on-surface" data-selected="false" type="button">
+          UI &amp; UX Design
+        </button>
+<button class="craft-pill px-space-sm py-2 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant bg-surface-container-high/90 hover:text-on-surface" data-selected="false" type="button">
+          Web Handling
+        </button>
+<button class="craft-pill px-space-sm py-2 rounded-full font-label-sm text-label-sm transition-all text-on-surface-variant bg-surface-container-high/90 hover:text-on-surface" data-selected="false" type="button">
+          SEO &amp; Growth
+        </button>
+</div>
+</div>
+<!-- Step 02: Particulars -->
+<div class="p-space-md rounded-lg bg-surface-container/70 backdrop-blur-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">02</span>
+<h3 class="font-title text-title text-on-surface">Client &amp; Brand Particulars</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Introduce the architects behind this undertaking.</p>
+<div class="flex flex-col gap-space-sm pt-1">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Full Name *</label>
+<input id="clientName" class="w-full px-space-md py-3 rounded-DEFAULT bg-surface-container-highest/60 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest shadow-sm transition-all" placeholder="e.g. Marc Jacobs" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Work Email *</label>
+<input id="clientEmail" class="w-full px-space-md py-3 rounded-DEFAULT bg-surface-container-highest/60 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest shadow-sm transition-all" placeholder="marc@enterprise.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Brand / Organization *</label>
+<input id="clientCompany" class="w-full px-space-md py-3 rounded-DEFAULT bg-surface-container-highest/60 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest shadow-sm transition-all" placeholder="Aura Syndicate Co." required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Current Website URL <span class="text-outline font-normal">(Optional)</span></label>
+<input id="clientWebsite" class="w-full px-space-md py-3 rounded-DEFAULT bg-surface-container-highest/60 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest shadow-sm transition-all" placeholder="https://aurasyndicate.design" type="url"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Project Narrative &amp; Objectives *</label>
+<textarea id="projectBrief" class="w-full px-space-md py-3 rounded-DEFAULT bg-surface-container-highest/60 text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-highest shadow-sm transition-all resize-none" placeholder="Synthesize the vision, target market benchmarks, pain points, and target outcome..." required="" rows="4"></textarea>
+</div>
+</div>
+</div>
+<!-- Step 03: Horizon & Capital Matrix -->
+<div class="p-space-md rounded-lg bg-surface-container/70 backdrop-blur-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">03</span>
+<h3 class="font-title text-title text-on-surface">Timeline &amp; Investment Bracket</h3>
+</div>
+<!-- Launch Horizon Selector -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface font-medium uppercase tracking-wider">Launch Horizon</span>
+<div class="grid grid-cols-2 gap-2" id="horizon-group">
+<label class="flex flex-col p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer text-left transition-all hover:bg-surface-container-highest">
+<input checked="" class="sr-only" name="horizon" type="radio" value="2w"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold horizon-title text-primary">&lt; 2 Weeks</span>
+<span class="font-label-sm text-label-sm text-outline">Express Sprint</span>
+</label>
+<label class="flex flex-col p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer text-left transition-all hover:bg-surface-container-highest">
+<input class="sr-only" name="horizon" type="radio" value="1m"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold horizon-title">1 Month</span>
+<span class="font-label-sm text-label-sm text-outline">Standard Trajectory</span>
+</label>
+<label class="flex flex-col p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer text-left transition-all hover:bg-surface-container-highest">
+<input class="sr-only" name="horizon" type="radio" value="3m"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold horizon-title">2 - 3 Months</span>
+<span class="font-label-sm text-label-sm text-outline">Deep Build Cycle</span>
+</label>
+<label class="flex flex-col p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer text-left transition-all hover:bg-surface-container-highest">
+<input class="sr-only" name="horizon" type="radio" value="flex"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold horizon-title">Flexible</span>
+<span class="font-label-sm text-label-sm text-outline">Advisory Retainer</span>
+</label>
+</div>
+</div>
+<!-- Budget Selector -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface font-medium uppercase tracking-wider">Anticipated Budget Range</span>
+<div class="flex flex-col gap-2" id="budget-group">
+<label class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer transition-all hover:bg-surface-container-highest">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="sr-only" name="budget" type="radio" value="5-10"/>
+<div class="w-4 h-4 rounded-full bg-primary flex items-center justify-center budget-bullet">
+<div class="w-1.5 h-1.5 rounded-full bg-on-primary"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">$5k - $10k</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary">Foundational</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer transition-all hover:bg-surface-container-highest">
+<div class="flex items-center gap-space-xs">
+<input class="sr-only" name="budget" type="radio" value="10-25"/>
+<div class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center budget-bullet">
+<div class="w-1.5 h-1.5 rounded-full bg-transparent"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">$10k - $25k</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Transformation</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer transition-all hover:bg-surface-container-highest">
+<div class="flex items-center gap-space-xs">
+<input class="sr-only" name="budget" type="radio" value="25-50"/>
+<div class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center budget-bullet">
+<div class="w-1.5 h-1.5 rounded-full bg-transparent"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">$25k - $50k</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Signature</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer transition-all hover:bg-surface-container-highest">
+<div class="flex items-center gap-space-xs">
+<input class="sr-only" name="budget" type="radio" value="50+"/>
+<div class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center budget-bullet">
+<div class="w-1.5 h-1.5 rounded-full bg-transparent"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">$50k+</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Enterprise Global</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Step 04: Discovery Session -->
+<div class="p-space-md rounded-lg bg-surface-container/70 backdrop-blur-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">04</span>
+<h3 class="font-title text-title text-on-surface">Preferred Discovery Session Slot</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We align in your preferred window post-brief clearance.</p>
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Target Date</label>
+<input id="slotDate" class="w-full px-space-sm py-3 rounded-DEFAULT bg-surface-container-highest/60 text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-highest shadow-sm" type="date" value="2025-05-15"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Time Window</label>
+<select id="slotTime" class="w-full px-space-sm py-3 rounded-DEFAULT bg-surface-container-highest/60 text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-highest shadow-sm">
+<option>10:00 - 13:00 IST</option>
+<option>14:00 - 18:00 IST</option>
+<option>09:00 - 12:00 CET</option>
+<option>14:00 - 17:00 CET</option>
+<option>09:00 - 12:00 EST</option>
+<option>13:00 - 16:00 EST</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Form Submit Section -->
+<div class="flex flex-col items-center gap-space-sm w-full pt-2">
+<button class="w-full py-4 px-space-lg rounded-full bg-gradient-to-r from-primary-container to-secondary-container text-on-primary font-label-md text-label-md font-bold tracking-wider shadow-[0_8px_24px_rgba(183,109,255,0.35)] active:scale-[0.98] transition-all flex items-center justify-center gap-2" id="submit-btn" type="submit">
+<span>Submit via WhatsApp</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+<!-- Live feedback card -->
+<div id="transmissionSuccess" class="hidden w-full p-space-sm rounded-DEFAULT bg-primary/20 border border-primary/40 text-center flex flex-col gap-1">
+  <span class="font-label-md text-label-md text-primary font-bold flex items-center justify-center gap-1">
+    <span class="material-symbols-outlined text-[18px]">check_circle</span> Transmission Prepared
+  </span>
+  <p id="confirmationSummary" class="font-body-sm text-body-sm text-on-surface">WhatsApp is opening with your formatted brief. Tap Send to reach our team immediately.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">shield</span>
+          Protected by mutual NDA • Strict confidentiality protocols
+        </span>
+<span class="font-label-sm text-label-sm text-outline">Zero spam guarantee • Instant WhatsApp direct channel</span>
+</div>
+</div>
+</form>
+<!-- Transmission Hubs -->
+<div class="flex flex-col gap-space-sm mt-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-title text-title text-on-surface">Transmission Hubs</h3>
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase font-semibold">Live Concurrency</span>
+</div>
+<div class="grid grid-cols-1 gap-2">
+<div class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-high/60 backdrop-blur-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">New Delhi HQ</span>
+<span class="font-label-sm text-label-sm text-outline">Studio • IST UTC+5:30</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-400 font-semibold">Active Hub</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-high/60 backdrop-blur-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">India Creative Hub</span>
+<span class="font-label-sm text-label-sm text-outline">Pan-India Deployment</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-high/60 backdrop-blur-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-amber-400 shadow-[0_0_8px_#fbbf24]"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Remote Global</span>
+<span class="font-label-sm text-label-sm text-outline">Worldwide Clients</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-amber-400 font-semibold">24/7 Concurrency</span>
+</div>
+</div>
+<!-- Hub Direct Access -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low/70 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">mail</span>
+<a href="mailto:slrgraphics.contact@gmail.com" class="font-label-sm text-label-sm text-on-surface hover:text-primary transition-colors">slrgraphics.contact@gmail.com</a>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Mutual NDA on Request</span>
+</div>
+</div>
+<!-- Studio Workflow Sequence -->
+<div class="p-space-md rounded-lg bg-surface-container-low/80 backdrop-blur-md shadow-md flex flex-col gap-space-md mt-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Operational Blueprint</span>
+<h3 class="font-title text-title text-on-surface">What happens after you submit</h3>
+</div>
+<div class="flex flex-col gap-space-sm relative">
+<!-- Step 1 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0 shadow-[0_0_12px_rgba(183,109,255,0.4)]">
+          1
+        </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Brief Ingestion &amp; Review</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-[10px]">24h</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Comprehensive audit by creative leadership to analyze brand trajectory and design mechanics.</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">
+          2
+        </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Creative Alignment Call</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">30-minute high-focus sync to probe creative objectives, technical criteria, and chemistry.</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-space-sm items-start">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">
+          3
+        </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tailored Scope &amp; Proposal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Custom timeline, transparent deliverables, capital allocation schedule, and instant onboarding portal.</span>
+</div>
+</div>
+</div>
+<!-- Director Quote Card -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-high/60 backdrop-blur-sm flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover shrink-0 shadow-[0_0_12px_rgba(183,109,255,0.25)]" data-alt="Intense high-fashion editorial portrait of Elena Rostova, Founding Creative Director of SLR Graphics, lit with cinematic dramatic deep violet chiaroscuro lighting on dark minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy5jYwSCx_oPh4TQP7F1mGk4sHB-kz6y-IMHoh6noEnsZwHhvJ0ulI_my1BfZgqLyUr0BTP3-aY9yM_4mRfnn5eYXiy9mKk5zQvmaBVYxCU3XrDqt5gH1O4idQ9hKCxtnqW2vs6EbPvU6D__uuRzCeekg8JdCGMsz-uOTk7llXLEp8l2O2VlnsmepikLXuglRAFGXjMCGyN0Elw6Y3HLuYR_yiSoqb1LyNisq90MgFEKVrBwL1JnCddQ"/>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface italic line-clamp-2 leading-tight">
+          "We don't build transient noise. We engineer timeless visual prestige."
+        </p>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">Elena Rostova • Founding Creative Director</span>
+</div>
+</div>
+</div>
+<!-- Frequently Clarified Logistics (Mobile Accordion) -->
+<div class="flex flex-col gap-space-sm mt-space-sm">
+<h3 class="font-title text-title text-on-surface">Frequently Clarified Logistics</h3>
+<div class="flex flex-col gap-2" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="rounded-DEFAULT bg-surface-container-low overflow-hidden transition-colors">
+<button class="w-full p-space-sm flex items-center justify-between text-left faq-trigger" type="button">
+<span class="font-label-md text-label-md text-on-surface font-semibold pr-2">What is the typical production turnaround time?</span>
+<span class="material-symbols-outlined text-[20px] text-primary transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="px-space-sm pb-space-sm font-body-sm text-body-sm text-on-surface-variant hidden faq-content">
+          Foundational sprints range from 2 to 4 weeks, while holistic brand ecosystems, dynamic 3D visual language, and flagship digital platforms typically span 8 to 12 weeks of iterative execution.
+        </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-DEFAULT bg-surface-container-low overflow-hidden transition-colors">
+<button class="w-full p-space-sm flex items-center justify-between text-left faq-trigger" type="button">
+<span class="font-label-md text-label-md text-on-surface font-semibold pr-2">How are financial arrangement milestones structured?</span>
+<span class="material-symbols-outlined text-[20px] text-primary transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="px-space-sm pb-space-sm font-body-sm text-body-sm text-on-surface-variant hidden faq-content">
+          Standard enterprise engagements are staged: 40% initial commitment deposit upon contract validation, 30% at milestone prototype approvals, and 30% upon final handoff and IP assignment.
+        </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-DEFAULT bg-surface-container-low overflow-hidden transition-colors">
+<button class="w-full p-space-sm flex items-center justify-between text-left faq-trigger" type="button">
+<span class="font-label-md text-label-md text-on-surface font-semibold pr-2">How do you manage cross-timezone collaboration?</span>
+<span class="material-symbols-outlined text-[20px] text-primary transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="px-space-sm pb-space-sm font-body-sm text-body-sm text-on-surface-variant hidden faq-content">
+          With our headquarters in New Delhi, India and global remote workflow systems, we operate on asynchronous agility. We provide 24-hour sprint handovers, async Loom design decks, and synchronized live alignment windows tailored to your time zone.
+        </div>
+</div>
+<!-- FAQ 4 -->
+<div class="rounded-DEFAULT bg-surface-container-low overflow-hidden transition-colors">
+<button class="w-full p-space-sm flex items-center justify-between text-left faq-trigger" type="button">
+<span class="font-label-md text-label-md text-on-surface font-semibold pr-2">Do we receive full intellectual property ownership?</span>
+<span class="material-symbols-outlined text-[20px] text-primary transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="px-space-sm pb-space-sm font-body-sm text-body-sm text-on-surface-variant hidden faq-content">
+          Unconditionally. Upon final release clearance, 100% of master design vectors, motion artifacts, design token architecture, and production assets are transferred in full unencumbered ownership.
+        </div>
+</div>
+</div>
+</div>
+<!-- Executive Briefing Banner -->
+<div class="p-space-md rounded-lg bg-surface-container-high/70 backdrop-blur-md shadow-md flex flex-col gap-space-sm my-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Direct Concierge Access</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+      Require an immediate executive briefing? Contact partners directly or initialize transmission.
+    </p>
+<div class="flex items-center justify-between pt-1">
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:text-primary transition-colors flex items-center gap-1" href="mailto:slrgraphics.contact@gmail.com">
+        slrgraphics.contact@gmail.com
+        <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+<a class="px-space-sm py-1.5 rounded-full bg-primary/20 text-primary hover:bg-primary/30 font-label-sm text-label-sm font-medium transition-colors" href="#transmission-form">
+        Begin Form ↑
+      </a>
+</div>
+</div>
+</div>
+<script>
+  // Config
+  const WHATSAPP_PHONE = '917004953962';
+
+  // Check URL parameters for prefill
+  document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const emailParam = urlParams.get('email');
+    if (emailParam) {
+      const emailField = document.getElementById('clientEmail');
+      if (emailField) {
+        emailField.value = emailParam;
+        emailField.classList.add('ring-2', 'ring-primary');
+      }
+    }
+  });
+
+  // Multi-select Pill Toggle Logic
+  document.querySelectorAll('.craft-pill').forEach(button => {
+    button.addEventListener('click', () => {
+      const isSelected = button.getAttribute('data-selected') === 'true';
+      if (isSelected) {
+        button.setAttribute('data-selected', 'false');
+        button.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-[0_0_12px_rgba(183,109,255,0.3)]');
+        button.classList.add('bg-surface-container-high/90', 'text-on-surface-variant');
+      } else {
+        button.setAttribute('data-selected', 'true');
+        button.classList.remove('bg-surface-container-high/90', 'text-on-surface-variant');
+        button.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-[0_0_12px_rgba(183,109,255,0.3)]');
+      }
+    });
+  });
+
+  // Launch Horizon Radio Styling
+  const horizonLabels = document.querySelectorAll('#horizon-group label');
+  horizonLabels.forEach(label => {
+    label.addEventListener('click', () => {
+      horizonLabels.forEach(l => {
+        const title = l.querySelector('.horizon-title');
+        title.classList.remove('text-primary');
+        l.classList.remove('bg-surface-container-highest');
+        l.classList.add('bg-surface-container-highest/50');
+      });
+      label.querySelector('.horizon-title').classList.add('text-primary');
+      label.classList.remove('bg-surface-container-highest/50');
+      label.classList.add('bg-surface-container-highest');
+    });
+  });
+
+  // Budget Range Radio Styling
+  const budgetLabels = document.querySelectorAll('#budget-group label');
+  budgetLabels.forEach(label => {
+    label.addEventListener('click', () => {
+      budgetLabels.forEach(l => {
+        const bullet = l.querySelector('.budget-bullet');
+        const inner = bullet.querySelector('div');
+        const tag = l.querySelector('span:last-child');
+        bullet.className = 'w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center budget-bullet';
+        inner.className = 'w-1.5 h-1.5 rounded-full bg-transparent';
+        tag.className = 'font-label-sm text-label-sm text-outline';
+      });
+      const bullet = label.querySelector('.budget-bullet');
+      const inner = bullet.querySelector('div');
+      const tag = label.querySelector('span:last-child');
+      bullet.className = 'w-4 h-4 rounded-full bg-primary flex items-center justify-center budget-bullet';
+      inner.className = 'w-1.5 h-1.5 rounded-full bg-on-primary';
+      tag.className = 'font-label-sm text-label-sm text-primary';
+    });
+  });
+
+  // FAQ Mobile Accordion
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const parent = trigger.parentElement;
+      const content = parent.querySelector('.faq-content');
+      const icon = trigger.querySelector('.faq-icon');
+      const isHidden = content.classList.contains('hidden');
+
+      // Close other accordions for compact view
+      document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Collect selected services
+  function getSelectedServices() {
+    const selected = document.querySelectorAll('.craft-pill[data-selected="true"]');
+    if (!selected.length) return 'General Design & Creative';
+    return Array.from(selected).map(btn => btn.textContent.trim()).join(', ');
+  }
+
+  // Collect timeline
+  function getSelectedTimeline() {
+    const active = document.querySelector('#horizon-group input[name="horizon"]:checked');
+    if (!active) return 'Flexible';
+    const parent = active.closest('label');
+    return parent ? parent.querySelector('.horizon-title')?.textContent.trim() : active.value;
+  }
+
+  // Collect budget
+  function getSelectedBudget() {
+    const active = document.querySelector('#budget-group input[name="budget"]:checked');
+    if (!active) return 'Not specified';
+    const parent = active.closest('label');
+    return parent ? parent.querySelector('span.font-label-md')?.textContent.trim() : active.value;
+  }
+
+  // Handle WhatsApp Submission
+  window.handleTransmission = function() {
+    const btn = document.getElementById('submit-btn');
+    const toast = document.getElementById('transmissionSuccess');
+    const summary = document.getElementById('confirmationSummary');
+
+    const name = document.getElementById('clientName')?.value.trim() || 'N/A';
+    const email = document.getElementById('clientEmail')?.value.trim() || 'N/A';
+    const company = document.getElementById('clientCompany')?.value.trim() || 'N/A';
+    const website = document.getElementById('clientWebsite')?.value.trim() || 'N/A';
+    const brief = document.getElementById('projectBrief')?.value.trim() || 'N/A';
+    const date = document.getElementById('slotDate')?.value || 'N/A';
+    const time = document.getElementById('slotTime')?.value || 'N/A';
+    const services = getSelectedServices();
+    const timeline = getSelectedTimeline();
+    const budget = getSelectedBudget();
+
+    const message =
+      `🔔 *New Mobile Enquiry – SLR Graphics*\n` +
+      `━━━━━━━━━━━━━━━━━━\n` +
+      `👤 *Name:* ${name}\n` +
+      `🏢 *Company:* ${company}\n` +
+      `📧 *Email:* ${email}\n` +
+      `🌐 *Website:* ${website}\n` +
+      `━━━━━━━━━━━━━━━━━━\n` +
+      `🎨 *Services:* ${services}\n` +
+      `⏱ *Timeline:* ${timeline}\n` +
+      `💰 *Budget:* ${budget}\n` +
+      `━━━━━━━━━━━━━━━━━━\n` +
+      `📝 *Brief:*\n${brief}\n` +
+      `━━━━━━━━━━━━━━━━━━\n` +
+      `📅 *Preferred Slot:* ${date} (${time})`;
+
+    btn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>Opening WhatsApp...</span>';
+    btn.classList.add('opacity-75', 'pointer-events-none');
+
+    const waUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, '_blank');
+
+    setTimeout(() => {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: \'FILL\' 1;">check_circle</span><span>Transmission Dispatched ✓</span>';
+      btn.classList.remove('opacity-75', 'pointer-events-none', 'bg-gradient-to-r', 'from-primary-container', 'to-secondary-container');
+      btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      if (toast) toast.classList.remove('hidden');
+      if (summary) summary.innerText = `Thank you ${name}! WhatsApp opened with your brief. We will reply to ${email} within 24 hours.`;
+    }, 600);
+  };
+
+  // Bottom Navigation Router
+  const NAV_MAP = {
+    'showcase': null,
+    'services': '../services/code.html',
+    'inquire': '#transmission-form',
+    'about': '../about/code.html',
+    'contact': '#transmission-form'
+  };
+
+  document.querySelectorAll('nav a[data-path]').forEach(link => {
+    const path = link.getAttribute('data-path');
+    const target = NAV_MAP[path];
+    if (target) {
+      link.setAttribute('href', target);
+      if (target.startsWith('#')) {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetEl = document.querySelector(target);
+          if (targetEl) {
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
+    } else {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        showToast(`${path.charAt(0).toUpperCase() + path.slice(1)} section coming soon`);
+      });
+    }
+  });
+
+  function showToast(msg) {
+    let t = document.getElementById('mobile-toast');
+    if (!t) {
+      t = document.createElement('div');
+      t.id = 'mobile-toast';
+      t.className = 'fixed bottom-20 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-sm font-semibold shadow-lg z-50 transition-opacity duration-300 pointer-events-none';
+      document.body.appendChild(t);
+    }
+    t.textContent = `✦ ${msg}`;
+    t.style.opacity = '1';
+    clearTimeout(t._timer);
+    t._timer = setTimeout(() => { t.style.opacity = '0'; }, 2200);
+  }
+</script>
+<footer class="w-full px-margin py-space-lg mt-auto bg-surface-container-lowest/60 backdrop-blur-md flex flex-col items-center justify-center gap-space-xs text-center pb-24">
+<span class="font-label-sm text-label-sm text-on-surface-variant">© 2025 SLR Graphics. All privileges reserved.</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider">NEW DELHI • PAN-INDIA • REMOTE GLOBAL</span>
+</footer>
+</main>
+<nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.5)]" data-active-classes="text-primary font-bold">
+<div class="flex items-center justify-around h-16 px-margin">
+<a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="showcase" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-sm text-label-sm leading-none">Showcase</span></a>
+<a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="../services/code.html"><span class="material-symbols-outlined text-[22px]">category</span><span class="font-label-sm text-label-sm leading-none">Services</span></a>
+<a class="flex items-center justify-center min-w-[44px] min-h-[44px] px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container shadow-[0_0_20px_rgba(96,1,209,0.5)] hover:scale-105 active:scale-95 transition-all" data-path="inquire" href="#transmission-form"><span class="material-symbols-outlined text-[20px] mr-1">bolt</span><span class="font-label-md text-label-md leading-none">Inquire</span></a>
+<a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="../about/code.html"><span class="material-symbols-outlined text-[22px]">token</span><span class="font-label-sm text-label-sm leading-none">About</span></a>
+<a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] gap-space-xs transition-colors text-primary font-bold" data-path="contact" href="#transmission-form"><span class="material-symbols-outlined text-[22px]">alternate_email</span><span class="font-label-sm text-label-sm leading-none">Contact</span></a>
+</div>
+</nav>
+</body>
+</html>
