@@ -129,24 +129,24 @@
 <span class="font-label-sm text-label-sm text-on-surface font-medium uppercase tracking-wider">Launch Horizon</span>
 <div class="grid grid-cols-2 gap-2" id="horizon-group">
 <label class="flex flex-col p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer text-left transition-all hover:bg-surface-container-highest">
-<input checked="" class="sr-only" name="horizon" type="radio" value="2w"/>
-<span class="font-label-md text-label-md text-on-surface font-semibold horizon-title text-primary">&lt; 2 Weeks</span>
-<span class="font-label-sm text-label-sm text-outline">Express Sprint</span>
+<input class="sr-only" name="horizon" type="radio" value="24hrs"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold horizon-title">24hrs</span>
+<span class="font-label-sm text-label-sm text-outline">Urgent</span>
+</label>
+<label class="flex flex-col p-space-sm rounded-DEFAULT bg-surface-container-highest cursor-pointer text-left transition-all">
+<input checked="" class="sr-only" name="horizon" type="radio" value="week"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold horizon-title text-primary">Under a Week</span>
+<span class="font-label-sm text-label-sm text-outline">Standard</span>
 </label>
 <label class="flex flex-col p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer text-left transition-all hover:bg-surface-container-highest">
-<input class="sr-only" name="horizon" type="radio" value="1m"/>
-<span class="font-label-md text-label-md text-on-surface font-semibold horizon-title">1 Month</span>
-<span class="font-label-sm text-label-sm text-outline">Standard Trajectory</span>
-</label>
-<label class="flex flex-col p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer text-left transition-all hover:bg-surface-container-highest">
-<input class="sr-only" name="horizon" type="radio" value="3m"/>
-<span class="font-label-md text-label-md text-on-surface font-semibold horizon-title">2 - 3 Months</span>
-<span class="font-label-sm text-label-sm text-outline">Deep Build Cycle</span>
+<input class="sr-only" name="horizon" type="radio" value="month"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold horizon-title">Under a Month</span>
+<span class="font-label-sm text-label-sm text-outline">Flexible Build</span>
 </label>
 <label class="flex flex-col p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer text-left transition-all hover:bg-surface-container-highest">
 <input class="sr-only" name="horizon" type="radio" value="flex"/>
 <span class="font-label-md text-label-md text-on-surface font-semibold horizon-title">Flexible</span>
-<span class="font-label-sm text-label-sm text-outline">Advisory Retainer</span>
+<span class="font-label-sm text-label-sm text-outline">Open Retainer</span>
 </label>
 </div>
 </div>
@@ -156,41 +156,41 @@
 <div class="flex flex-col gap-2" id="budget-group">
 <label class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer transition-all hover:bg-surface-container-highest">
 <div class="flex items-center gap-space-xs">
-<input checked="" class="sr-only" name="budget" type="radio" value="5-10"/>
-<div class="w-4 h-4 rounded-full bg-primary flex items-center justify-center budget-bullet">
-<div class="w-1.5 h-1.5 rounded-full bg-on-primary"></div>
-</div>
-<span class="font-label-md text-label-md text-on-surface font-semibold">$5k - $10k</span>
-</div>
-<span class="font-label-sm text-label-sm text-primary">Foundational</span>
-</label>
-<label class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer transition-all hover:bg-surface-container-highest">
-<div class="flex items-center gap-space-xs">
-<input class="sr-only" name="budget" type="radio" value="10-25"/>
+<input class="sr-only" name="budget" type="radio" value="200-500"/>
 <div class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center budget-bullet">
 <div class="w-1.5 h-1.5 rounded-full bg-transparent"></div>
 </div>
-<span class="font-label-md text-label-md text-on-surface font-semibold">$10k - $25k</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">₹200 - ₹500</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Foundational</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer transition-all hover:bg-surface-container-highest">
+<div class="flex items-center gap-space-xs">
+<input class="sr-only" name="budget" type="radio" value="500-1000"/>
+<div class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center budget-bullet">
+<div class="w-1.5 h-1.5 rounded-full bg-transparent"></div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">₹500 - ₹1,000</span>
 </div>
 <span class="font-label-sm text-label-sm text-outline">Transformation</span>
 </label>
-<label class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer transition-all hover:bg-surface-container-highest">
+<label class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest cursor-pointer transition-all">
 <div class="flex items-center gap-space-xs">
-<input class="sr-only" name="budget" type="radio" value="25-50"/>
-<div class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center budget-bullet">
-<div class="w-1.5 h-1.5 rounded-full bg-transparent"></div>
+<input checked="" class="sr-only" name="budget" type="radio" value="1000-5000"/>
+<div class="w-4 h-4 rounded-full bg-primary flex items-center justify-center budget-bullet">
+<div class="w-1.5 h-1.5 rounded-full bg-on-primary"></div>
 </div>
-<span class="font-label-md text-label-md text-on-surface font-semibold">$25k - $50k</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">₹1,000 - ₹5,000</span>
 </div>
-<span class="font-label-sm text-label-sm text-outline">Signature</span>
+<span class="font-label-sm text-label-sm text-primary">Signature</span>
 </label>
 <label class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-highest/50 cursor-pointer transition-all hover:bg-surface-container-highest">
 <div class="flex items-center gap-space-xs">
-<input class="sr-only" name="budget" type="radio" value="50+"/>
+<input class="sr-only" name="budget" type="radio" value="5000-20000"/>
 <div class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center budget-bullet">
 <div class="w-1.5 h-1.5 rounded-full bg-transparent"></div>
 </div>
-<span class="font-label-md text-label-md text-on-surface font-semibold">$50k+</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">₹5,000 - ₹20,000</span>
 </div>
 <span class="font-label-sm text-label-sm text-outline">Enterprise Global</span>
 </label>
